@@ -1,0 +1,608 @@
+@import url(style.css);
+
+.link-panel .link {
+	color: var(--umbra);
+}
+.light-panel {
+	position: absolute;
+	top: 0em;
+	right: 0em;
+
+	height: 400vh;
+	width: 19em;
+
+	background-color: var(--touch-of-mint);
+}
+
+.scenery-navigation {
+	position: fixed;
+	top: 50%;
+	right: 1em;
+	z-index: 2;
+
+	transform: translateY(-50%);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+
+	height: 12em;
+	width: 3em;
+}
+.scenery-navigation .dot {
+	cursor: pointer;
+
+	background-color: var(--umbra);
+
+	height: 1em;
+	width: 1em;
+
+	border-radius: 50em;
+}
+
+.scenery-container {
+	position: absolute;
+	top: 0em;
+	left: 0em;
+	z-index: 0;
+
+	opacity: 0;
+
+	height: 400vh;
+	width: 100%;
+}
+.introduction-panel {
+	position: relative;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	height: 100vh;
+	width: 100%;
+}
+.basic-information {
+	position: relative;
+	right: 10em;
+
+	height: 24em;
+	width: 36em;
+}
+.basic-information .title {
+	color: var(--eva-green);
+}
+.basic-information .address {
+	position: relative;
+	top: -0.5em;
+
+	opacity: 0.75;
+
+	font-size: 1rem;
+}
+.basic-information .description {
+	margin-top: 1em;
+}
+.basic-information .line-theme {
+	position: absolute;
+	bottom: 1em;
+	left: 1em;
+
+	height: 5em;
+}
+.basic-information .transpo {
+	margin-top: 3em;
+	padding-left: 3em;
+
+	font-size: 1rem;
+}
+.image {
+	position: absolute;
+	right: 10em;
+
+	height: 24em;
+	width: 18em;
+}
+
+.people-panel {
+	position: relative;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	height: 100vh;
+	width: 100%;
+}
+.food-panel {
+	position: relative;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	height: 100vh;
+	width: 100%;
+}
+.bgc-image-intro {
+	background: url(../resources/pictures/bgc-4.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.bgc-image-people {
+	background: url(../resources/pictures/bgc-3.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.bgc-image-food {
+	background: url(../resources/pictures/bgc-food.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.gallery {
+	position: relative;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	height: 100vh;
+	width: 100%;
+}
+.gallery-display {
+	position: absolute;
+	right: 7.5em;
+
+	rotate: 90deg;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: var(--eva-green);
+
+	height: 6em;
+	width: 23em;
+}
+.image {
+	box-shadow: 4px 4px 8px 8px rgba(0, 0, 0, 0.5);
+}
+.gallery-grid {
+	position: relative;
+	left: -5em;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+
+	height: 23em;
+	width: 40em;
+}
+.image-uno {
+	cursor: pointer;
+
+	background: url(../resources/pictures/bgc-2.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	margin: 0.5em 0.25em 0.25em 0.5em;
+}
+.image-dos {
+	cursor: pointer;
+
+	background: url(../resources/pictures/bgc-1.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	margin: 0.5em 0.5em 0.25em 0.25em;
+}
+.image-tres {
+	cursor: pointer;
+
+	grid-area: 2 / 1 / 3 / 4;
+
+	background: url(../resources/pictures/bgc-3.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	margin: 0.25em 0.5em 0.5em 0.5em;
+}
+.images-gallery {
+	box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.image-uno-absolute {
+	position: fixed;
+	top: 0em;
+	width: 0em;
+	z-index: 4;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	height: 100vh;
+	width: 100%;
+
+	opacity: 1;
+
+	background-color: #010101ee;
+}
+.image-uno-absolute .image-uno-abs {
+	height: 90%;
+	width: 90%;
+
+	background: url(../resources/pictures/bgc-2.jpg);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.image-uno-absolute .image-dos-abs {
+	height: 90%;
+	width: 90%;
+
+	background: url(../resources/pictures/bgc-1.jpg);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.image-uno-absolute .image-tres-abs {
+	height: 90%;
+	width: 90%;
+
+	background: url(../resources/pictures/bgc-3.jpg);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.close {
+	cursor: pointer;
+
+	position: absolute;
+	top: 1em;
+	right: 1em;
+
+	height: 2em;
+	width: 2em;
+
+	background: url(../resources/icons/back.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.ortigas .line-theme {
+	height: 2.5em;
+
+	transform: translateY(-2.5em);
+}
+.ortigas-image-intro {
+	background: url(../resources/pictures/ortigas-1.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.ortigas-image-people {
+	background: url(../resources/pictures/ortigas-2.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.ortigas-image-food {
+	background: url(../resources/pictures/ortigas-food.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.ortigas-1-gallery {
+	cursor: pointer;
+
+	background: url(../resources/pictures/ortigas-1.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	margin: 0.5em 0.25em 0.25em 0.5em;
+}
+.ortigas-2-gallery {
+	cursor: pointer;
+
+	background: url(../resources/pictures/ortigas-2.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	margin: 0.5em 0.5em 0.25em 0.25em;
+}
+.ortigas-3-gallery {
+	cursor: pointer;
+
+	grid-area: 2 / 1 / 3 / 4;
+
+	background: url(../resources/pictures/ortigas-3.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	margin: 0.25em 0.5em 0.5em 0.5em;
+}
+.image-uno-absolute .ortigas.image-uno-abs {
+	height: 90%;
+	width: 90%;
+
+	background: url(../resources/pictures/ortigas-1.jpg);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.image-uno-absolute .ortigas.image-dos-abs {
+	height: 90%;
+	width: 90%;
+
+	background: url(../resources/pictures/ortigas-2.jpg);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.image-uno-absolute .ortigas.image-tres-abs {
+	height: 90%;
+	width: 90%;
+
+	background: url(../resources/pictures/ortigas-3.jpg);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.intramuros.line-theme {
+	height: 6em;
+	transform: translateY(1em);
+}
+
+.intramuros-image-intro {
+	background: url(../resources/pictures/intramuros-1.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.intramuros-image-people {
+	background: url(../resources/pictures/intramuros-2.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.intramuros-image-food {
+	background: url(../resources/pictures/intramuros-food.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.intramuros-1-gallery {
+	cursor: pointer;
+
+	background: url(../resources/pictures/intramuros-1.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	margin: 0.5em 0.25em 0.25em 0.5em;
+}
+.intramuros-2-gallery {
+	cursor: pointer;
+
+	background: url(../resources/pictures/intramuros-2.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	margin: 0.5em 0.5em 0.25em 0.25em;
+}
+.intramuros-3-gallery {
+	cursor: pointer;
+
+	grid-area: 2 / 1 / 3 / 4;
+
+	background: url(../resources/pictures/intramuros-3.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	margin: 0.25em 0.5em 0.5em 0.5em;
+}
+.image-uno-absolute .intramuros.image-uno-abs {
+	height: 90%;
+	width: 90%;
+
+	background: url(../resources/pictures/intramuros-1.jpg);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.image-uno-absolute .intramuros.image-dos-abs {
+	height: 90%;
+	width: 90%;
+
+	background: url(../resources/pictures/intramuros-2.jpg);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.image-uno-absolute .intramuros.image-tres-abs {
+	height: 90%;
+	width: 90%;
+
+	background: url(../resources/pictures/intramuros-3.jpg);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.riverbank.line-theme {
+	height: 2em;
+	transform: translateY(-2.65em);
+}
+
+.riverbank-image-intro {
+	background: url(../resources/pictures/riverbank-1.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.riverbank-image-people {
+	background: url(../resources/pictures/riverbank-2.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.riverbank-image-food {
+	background: url(../resources/pictures/riverbank-food.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.riverbank-1-gallery {
+	cursor: pointer;
+
+	background: url(../resources/pictures/riverbank-1.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	margin: 0.5em 0.25em 0.25em 0.5em;
+}
+.riverbank-2-gallery {
+	cursor: pointer;
+
+	background: url(../resources/pictures/riverbank-2.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	margin: 0.5em 0.5em 0.25em 0.25em;
+}
+.riverbank-3-gallery {
+	cursor: pointer;
+
+	grid-area: 2 / 1 / 3 / 4;
+
+	background: url(../resources/pictures/riverbank-3.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	margin: 0.25em 0.5em 0.5em 0.5em;
+}
+.image-uno-absolute .riverbank.image-uno-abs {
+	height: 90%;
+	width: 90%;
+
+	background: url(../resources/pictures/riverbank-1.png);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.image-uno-absolute .riverbank.image-dos-abs {
+	height: 90%;
+	width: 90%;
+
+	background: url(../resources/pictures/riverbank-2.png);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.image-uno-absolute .riverbank.image-tres-abs {
+	height: 90%;
+	width: 90%;
+
+	background: url(../resources/pictures/riverbank-3.png);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.complex.line-theme {
+	transform: translateY(0em);
+
+	height: 3em;
+}
+
+.complex-image-intro {
+	background: url(../resources/pictures/complex-1.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.complex-image-people {
+	background: url(../resources/pictures/complex-2.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.complex-image-food {
+	background: url(../resources/pictures/complex-food.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.complex-1-gallery {
+	cursor: pointer;
+
+	background: url(../resources/pictures/complex-1.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	margin: 0.5em 0.25em 0.25em 0.5em;
+}
+.complex-2-gallery {
+	cursor: pointer;
+
+	background: url(../resources/pictures/complex-2.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	margin: 0.5em 0.5em 0.25em 0.25em;
+}
+.complex-3-gallery {
+	cursor: pointer;
+
+	grid-area: 2 / 1 / 3 / 4;
+
+	background: url(../resources/pictures/complex-3.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	margin: 0.25em 0.5em 0.5em 0.5em;
+}
+.image-uno-absolute .complex.image-uno-abs {
+	height: 90%;
+	width: 90%;
+
+	background: url(../resources/pictures/complex-1.jpg);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.image-uno-absolute .complex.image-dos-abs {
+	height: 90%;
+	width: 90%;
+
+	background: url(../resources/pictures/complex-2.jpg);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.image-uno-absolute .complex.image-tres-abs {
+	height: 90%;
+	width: 90%;
+
+	background: url(../resources/pictures/complex-3.jpg);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}

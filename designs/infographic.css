@@ -1,0 +1,115 @@
+/* Imports */
+@import url(style.css);
+
+/* Absolute Elements */
+.link-panel .link {
+	color: var(--umbra);
+}
+.light-panel {
+	position: absolute;
+	top: 0em;
+	right: 0em;
+
+	height: 100vh;
+	width: 19em;
+
+	background-color: var(--touch-of-mint);
+}
+
+/* Infographic Elements */
+.infographic.section {
+	justify-content: flex-start;
+}
+
+.reference-panel {
+	position: relative;
+	left: 8em;
+
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	row-gap: 1em;
+	align-content: center;
+	justify-items: center;
+
+	height: 28em;
+	width: 40em;
+
+	margin-top: 3em;
+}
+.reference-panel .header {
+	grid-area: 1 / 1 / 2 / 3;
+}
+.reference {
+	cursor: pointer;
+
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+
+	background-color: var(--umbra);
+
+	height: 11em;
+	width: 17em;
+
+	padding: 1em;
+
+	border: 0.1em solid var(--touch-of-mint);
+	border-radius: 1em;
+
+	box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.5);
+
+	text-align: center;
+}
+.reference h2 {
+	color: var(--eva-green);
+}
+.reference h4 {
+	font-size: 0.75rem;
+}
+.reference:nth-child(4) {
+	left: 10em;
+}
+.reference::before {
+	pointer-events: none;
+
+	position: absolute;
+	top: 0em;
+	left: 0em;
+
+	content: 'Click to Open Link';
+
+	opacity: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: var(--vantablack);
+
+	height: 100%;
+	width: 100%;
+
+	border-radius: inherit;
+}
+
+.infographic-image {
+	cursor: pointer;
+
+	position: absolute;
+	right: 11em;
+
+	background: url(../resources/pictures/infographic.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	height: 28.5em;
+	width: 16em;
+
+	margin-top: 3em;
+
+	box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.5);
+}

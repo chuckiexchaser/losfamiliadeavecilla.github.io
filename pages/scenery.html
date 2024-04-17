@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Los Paisajes</title>
+
+		<link rel="stylesheet" href="../designs/scenery.css" />
+		<link rel="stylesheet" href="../designs/animation.css" />
+
+		<script defer src="../scripts/scenery.js"></script>
+		<script defer src="../scripts/gallery.js"></script>
+
+		<script defer src="../scripts/observer.js"></script>
+		<script defer src="../scripts/linkage.js"></script>
+	</head>
+	<body>
+		<!-- Absolute Elements -->
+		<div class="navigation-bar">
+			<div class="logo" onclick="home()"></div>
+
+			<div class="link-panel">
+				<h4 class="link">Activities</h4>
+				<h4 class="link">Members</h4>
+			</div>
+		</div>
+
+		<div class="light-panel"></div>
+
+		<div class="scenery-navigation">
+			<div class="dot bgc active"></div>
+			<div class="dot ortigas"></div>
+			<div class="dot intramuros"></div>
+			<div class="dot riverbank"></div>
+			<div class="dot complex"></div>
+		</div>
+
+		<!-- BGC -->
+
+		<div class="absolute-images bgc-1 image-uno-absolute inactive">
+			<div class="bgc image-uno-abs"></div>
+			<div class="close" onclick="addInactive()"></div>
+		</div>
+
+		<div class="absolute-images bgc-2 image-uno-absolute inactive">
+			<div class="bgc image-dos-abs"></div>
+			<div class="close" onclick="addInactive()"></div>
+		</div>
+
+		<div class="absolute-images bgc-3 image-uno-absolute inactive">
+			<div class="bgc image-tres-abs"></div>
+			<div class="close" onclick="addInactive()"></div>
+		</div>
+
+		<!-- ORTIGAS -->
+
+		<div class="absolute-images ortigas-1 image-uno-absolute inactive">
+			<div class="ortigas image-uno-abs"></div>
+			<div class="close" onclick="addInactive()"></div>
+		</div>
+
+		<div class="absolute-images ortigas-2 image-uno-absolute inactive">
+			<div class="ortigas image-dos-abs"></div>
+			<div class="close" onclick="addInactive()"></div>
+		</div>
+
+		<div class="absolute-images ortigas-3 image-uno-absolute inactive">
+			<div class="ortigas image-tres-abs"></div>
+			<div class="close" onclick="addInactive()"></div>
+		</div>
+
+		<!-- INTRAMUROS -->
+
+		<div class="absolute-images intramuros-1 image-uno-absolute inactive">
+			<div class="intramuros image-uno-abs"></div>
+			<div class="close" onclick="addInactive()"></div>
+		</div>
+
+		<div class="absolute-images intramuros-2 image-uno-absolute inactive">
+			<div class="intramuros image-dos-abs"></div>
+			<div class="close" onclick="addInactive()"></div>
+		</div>
+
+		<div class="absolute-images intramuros-3 image-uno-absolute inactive">
+			<div class="intramuros image-tres-abs"></div>
+			<div class="close" onclick="addInactive()"></div>
+		</div>
+
+		<!-- RIVERBANK -->
+
+		<div class="absolute-images riverbank-1 image-uno-absolute inactive">
+			<div class="riverbank image-uno-abs"></div>
+			<div class="close" onclick="addInactive()"></div>
+		</div>
+
+		<div class="absolute-images riverbank-2 image-uno-absolute inactive">
+			<div class="riverbank image-dos-abs"></div>
+			<div class="close" onclick="addInactive()"></div>
+		</div>
+
+		<div class="absolute-images riverbank-3 image-uno-absolute inactive">
+			<div class="riverbank image-tres-abs"></div>
+			<div class="close" onclick="addInactive()"></div>
+		</div>
+
+		<!-- COMPLEX -->
+
+		<div class="absolute-images complex-1 image-uno-absolute inactive">
+			<div class="complex image-uno-abs"></div>
+			<div class="close" onclick="addInactive()"></div>
+		</div>
+
+		<div class="absolute-images complex-2 image-uno-absolute inactive">
+			<div class="complex image-dos-abs"></div>
+			<div class="close" onclick="addInactive()"></div>
+		</div>
+
+		<div class="absolute-images complex-3 image-uno-absolute inactive">
+			<div class="complex image-tres-abs"></div>
+			<div class="close" onclick="addInactive()"></div>
+		</div>
+
+		<!-- Scenery Elements -->
+		<div class="scenery section">
+			<!-- BGC -->
+			<div class="scenery-container bgc active">
+				<div class="introduction-panel">
+					<div class="basic-information">
+						<h2 class="title">BGC Taguig</h2>
+						<h4 class="address">11th Ave. corner 30th Street, Bonifacio Global City, Taguig City, Metro Manila</h4>
+
+						<h4 class="description">
+							Bonifacio Global City is a financial business district in Taguig, Metro Manila, Philippines. It is located 11 kilometers southeast of the capital city of Manila.
+						</h4>
+
+						<div class="line-theme"></div>
+
+						<h4 class="transpo">Ride in the UV express from City Hall of Pasig to Market Market Taguig ( Php 25 fare ) Or Walk from Pineda to BGC through Kalayaan bridge</h4>
+					</div>
+					<div class="bgc-image-intro intro-image image"></div>
+				</div>
+
+				<div class="people-panel">
+					<div class="basic-information people-information">
+						<h2 class="title">The People</h2>
+
+						<h4 class="description">
+							Bonifacio Global City is a financial business district in Taguig, Metro Manila, Philippines. It is located 11 kilometers southeast of the capital city of Manila.
+						</h4>
+					</div>
+					<div class="bgc-image-people people-image image"></div>
+				</div>
+
+				<div class="food-panel">
+					<div class="basic-information food-information">
+						<h2 class="title">Food</h2>
+
+						<h4 class="description">
+							In BGC Taguig, Randy's Donuts and Japanese Foods offers a tantalizing fusion of flavors. Indulge in Randy's iconic freshly baked donuts alongside authentic Japanese delights like
+							hearty ramen and savory takoyaki balls, promising a delightful culinary experience in the heart of the city.
+						</h4>
+					</div>
+					<div class="bgc-image-food food-image image"></div>
+				</div>
+
+				<div class="gallery">
+					<div class="gallery-display">
+						<h2 class="title">GALLERY</h2>
+					</div>
+
+					<div class="gallery-grid">
+						<div class="bgc-1 image-uno images-gallery"></div>
+						<div class="bgc-2 image-dos images-gallery"></div>
+						<div class="bgc-3 image-tres images-gallery"></div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Ortigas -->
+			<div class="scenery-container ortigas">
+				<div class="introduction-panel">
+					<div class="basic-information">
+						<h2 class="title">Ortigas Center</h2>
+						<h4 class="address">25 ADB Avenue, Ortigas Center, Pasig City, Metro Manila</h4>
+
+						<h4 class="description">
+							Ortigas Center is a central business district located within the joint boundaries of Pasig, Mandaluyong and Quezon City, within the Metro Manila region in the Philippines.
+						</h4>
+
+						<div class="line-theme ortigas"></div>
+
+						<h4 class="transpo">From Palengke to Megamall (Ride UV Megamall - Php 30)</h4>
+					</div>
+					<div class="ortigas-image-intro intro-image image"></div>
+				</div>
+
+				<div class="people-panel">
+					<div class="basic-information people-information">
+						<h2 class="title">The People</h2>
+
+						<h4 class="description">
+							In Ortigas Center, you'll find both wealthy residents and office workers. This busy district hosts upscale businesses and luxurious living spaces, attracting affluent individuals
+							and white-collar professionals alike.
+						</h4>
+					</div>
+					<div class="ortigas-image-people people-image image"></div>
+				</div>
+
+				<div class="food-panel">
+					<div class="basic-information food-information">
+						<h2 class="title">Food</h2>
+
+						<h4 class="description">
+							If you're in Ortigas Center and craving a quick and satisfying meal, you can't go wrong with the classic choices of McDonald's and Jollibee. McDonald's offers familiar favorites
+							like their iconic Big Mac and crispy Chicken McNuggets, while Jollibee serves up Filipino comfort food staples like Chickenjoy and Jolly Spaghetti. Whether you're in the mood for
+							a juicy burger or crave the taste of homegrown flavors, both fast food chains in Ortigas Center have something to satisfy every appetite.
+						</h4>
+					</div>
+					<div class="ortigas-image-food food-image image"></div>
+				</div>
+
+				<div class="gallery">
+					<div class="gallery-display">
+						<h2 class="title">GALLERY</h2>
+					</div>
+
+					<div class="gallery-grid">
+						<div class="ortigas-1-gallery image-uno images-gallery"></div>
+						<div class="ortigas-2-gallery image-dos images-gallery"></div>
+						<div class="ortigas-3-gallery image-tres images-gallery"></div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Intramuros -->
+			<div class="scenery-container intramuros">
+				<div class="introduction-panel">
+					<div class="basic-information">
+						<h2 class="title">Intramuros</h2>
+						<h4 class="address">Bonifacio Dr & Padre Burgos St, Manila, Luzon</h4>
+
+						<h4 class="description">Old-world Intramuros is home to Spanish-era landmarks like Fort Santiago, with a large stone gate and a shrine to national hero José Rizal.</h4>
+
+						<div class="line-theme intramuros"></div>
+
+						<h4 class="transpo">
+							Pasig Palengke then takes a jeep going to Crossing. (Fare: 13 pesos) Crossing take an MRT train to Taft Avenue. (Fare: 20 pesos) Taft Avenue take a jeep going to Luneta Park.
+							(Fare: 13 pesos) Luneta Park takes a kalesa or tricycle to go to Intramuros (Fare: Estimated of 50 pesos)
+						</h4>
+					</div>
+					<div class="intramuros-image-intro intro-image image"></div>
+				</div>
+
+				<div class="people-panel">
+					<div class="basic-information people-information">
+						<h2 class="title">The People</h2>
+
+						<h4 class="description">
+							People from all walks of life visit this place, whether with their partners, friends, or even from abroad. Couples enjoy romantic walks, friends have fun together, and travelers
+							explore its attractions. It's a place where everyone can bond over shared experiences and appreciate its charm, creating memories to cherish.
+						</h4>
+					</div>
+					<div class="intramuros-image-people people-image image"></div>
+				</div>
+
+				<div class="food-panel">
+					<div class="basic-information food-information">
+						<h2 class="title">Food</h2>
+
+						<h4 class="description">
+							I recommend going to the Mercadillo on General Luna St., where you can find a variety of foods and buy souvenirs and accessories. You must try the 2141 Sugar Rush "Crispy Crepe."
+						</h4>
+					</div>
+					<div class="intramuros-image-food food-image image"></div>
+				</div>
+
+				<div class="gallery">
+					<div class="gallery-display">
+						<h2 class="title">GALLERY</h2>
+					</div>
+
+					<div class="gallery-grid">
+						<div class="intramuros-1-gallery image-uno images-gallery"></div>
+						<div class="intramuros-2-gallery image-dos images-gallery"></div>
+						<div class="intramuros-3-gallery image-tres images-gallery"></div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Riverbanks -->
+			<div class="scenery-container riverbank">
+				<div class="introduction-panel">
+					<div class="basic-information">
+						<h2 class="title">Riverbanks</h2>
+						<h4 class="address">1800 Riverbanks Ave, Marikina, Metro Manila</h4>
+
+						<h4 class="description">
+							Riverbanks Center is an integrated development complex for shopping, recreational, business and commercial along Andres Bonifacio Avenue adjacent to Marikina River in Barangka,
+							Marikina, Metro Manila, Philippines.
+						</h4>
+
+						<div class="line-theme riverbank"></div>
+
+						<h4 class="transpo">Pasig Palengke then takes a jeep going to Riverbank Marikina. (Fare 22 pesos)</h4>
+					</div>
+					<div class="riverbank-image-intro intro-image image"></div>
+				</div>
+
+				<div class="people-panel">
+					<div class="basic-information people-information">
+						<h2 class="title">The People</h2>
+
+						<h4 class="description">
+							At Riverbank, you'll see families enjoying time together, friends hanging out and having fun, and couples out on romantic dates. It's a place where everyone can find something
+							they enjoy, whether it's relaxing by the water, socializing with friends, or cherishing quiet moments with a loved one.
+						</h4>
+					</div>
+					<div class="riverbank-image-people people-image image"></div>
+				</div>
+
+				<div class="food-panel">
+					<div class="basic-information food-information">
+						<h2 class="title">Food</h2>
+
+						<h4 class="description">
+							In Riverbank, Pokko Coffee and Teapat House stand out as top recommendations for food and coffee enthusiasts alike. Pokko offers rich brews paired with tasty pastries and
+							sandwiches, while Teapat House serves comforting teas and flavorful snacks. Whether you're seeking a quick bite or a relaxing afternoon treat, these café spots promise a
+							delightful experience by the riverside.
+						</h4>
+					</div>
+					<div class="riverbank-image-food food-image image"></div>
+				</div>
+
+				<div class="gallery">
+					<div class="gallery-display">
+						<h2 class="title">GALLERY</h2>
+					</div>
+
+					<div class="gallery-grid">
+						<div class="riverbank-1-gallery image-uno images-gallery"></div>
+						<div class="riverbank-2-gallery image-dos images-gallery"></div>
+						<div class="riverbank-3-gallery image-tres images-gallery"></div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Sports Complex -->
+			<div class="scenery-container complex">
+				<div class="introduction-panel">
+					<div class="basic-information">
+						<h2 class="title">Sport Complex</h2>
+						<h4 class="address">Sumulong Highway, 1805 Marikina City</h4>
+
+						<h4 class="description">
+							The Marikina Sports Center, also known as Marikina Sports Park and formerly known as Rodriguez Sports Center, is a sports complex located in Marikina, at the corner of Shoe Avenue
+							and Sumulong Highway in Metro Manila, Philippines.
+						</h4>
+
+						<div class="line-theme complex"></div>
+
+						<h4 class="transpo">from pineda to rotonda, ride a jeepney (13 pesos). Then, from rotonda to marikina, also ride a jeepney (25 pesos)</h4>
+					</div>
+					<div class="complex-image-intro intro-image image"></div>
+				</div>
+
+				<div class="people-panel">
+					<div class="basic-information people-information">
+						<h2 class="title">The People</h2>
+
+						<h4 class="description">
+							People who visit the Sports Complex are either sports lovers or those who enjoy regular exercise. It's a place where you'll find athletes training, fitness enthusiasts working
+							out, and individuals simply enjoying various sports activities. Whether it's playing basketball, swimming, or going for a jog, the Sports Complex welcomes everyone who values
+							staying active and healthy.
+						</h4>
+					</div>
+					<div class="complex-image-people people-image image"></div>
+				</div>
+
+				<div class="food-panel">
+					<div class="basic-information food-information">
+						<h2 class="title">Food</h2>
+
+						<h4 class="description">
+							Kafein is a local coffee shop near the arena and they sell various coffees and other non-coffee drinks. Not only that, they also have other snacks and drinks that most people
+							would like after a jog in the field.
+						</h4>
+					</div>
+					<div class="complex-image-food food-image image"></div>
+				</div>
+
+				<div class="gallery">
+					<div class="gallery-display">
+						<h2 class="title">GALLERY</h2>
+					</div>
+
+					<div class="gallery-grid">
+						<div class="complex-1-gallery image-uno images-gallery"></div>
+						<div class="complex-2-gallery image-dos images-gallery"></div>
+						<div class="complex-3-gallery image-tres images-gallery"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
