@@ -1,0 +1,155 @@
+/* Imports */
+@import url(style.css);
+
+/* Hover Effects */
+.logo {
+	transition: 0.3s ease;
+}
+.logo:hover {
+	scale: 1.25;
+}
+.logo:active {
+	scale: 1;
+}
+
+.link {
+	transition: 0.3s ease;
+}
+.link:hover {
+	color: var(--eva-green);
+}
+.link:active {
+	scale: 0.9;
+}
+
+.button-theme {
+	transition: 0.3s ease;
+}
+.button-theme:hover {
+	background-color: var(--vantablack);
+	color: var(--eva-green);
+
+	border-color: var(--eva-green);
+}
+.button-theme:active {
+	scale: 0.9;
+}
+
+.activity .button-theme:active {
+	scale: 0.9;
+}
+
+.card {
+	transition: 0.3s ease;
+}
+.card:hover {
+	scale: 1.1;
+
+	border: 0.1em solid var(--eva-green);
+}
+.card:active {
+	scale: 1;
+}
+.info {
+	transition: 0.3s ease;
+}
+.card:hover .info {
+	opacity: 1;
+}
+
+.reference {
+	transition: 0.3s ease;
+}
+.reference::before {
+	transition: 0.3s ease;
+}
+.reference:hover {
+	scale: 1.05;
+
+	border-color: var(--eva-green);
+}
+.reference:active {
+	scale: 1;
+}
+.reference:hover::before {
+	opacity: 1;
+}
+
+.infographic-image {
+	transition: 0.3s ease;
+}
+.infographic-image:hover {
+	scale: 1.05;
+}
+
+.images-gallery {
+	transition: 0.3s ease;
+}
+.images-gallery:hover {
+	scale: 1.05;
+}
+
+/* Active Effects */
+.item {
+	transition: 0.5s ease;
+}
+.item.active {
+	cursor: default;
+
+	scale: 1;
+
+	filter: grayscale(0);
+}
+
+.overview {
+	transition: 0.5s ease;
+}
+.overview.active {
+	z-index: 1;
+
+	opacity: 1;
+
+	transition: 1.5s ease 0.5s;
+}
+
+.dot {
+	transition: 0.5s ease;
+}
+.dot.active {
+	cursor: default;
+
+	background-color: var(--eva-green);
+
+	width: 2em;
+}
+
+.member-container {
+	transition: 0.5s ease;
+}
+.member-container.active {
+	z-index: 1;
+
+	opacity: 1;
+
+	transition: 1.5s ease 0.5s;
+}
+
+.scenery-container {
+	transition: 0.5s ease;
+}
+.scenery-container.active {
+	z-index: 1;
+
+	opacity: 1;
+
+	transition: 1.5s ease 0.5s;
+}
+
+.image-uno-absolute {
+	transition: 0.5s ease;
+}
+.image-uno-absolute.inactive {
+	z-index: 0;
+
+	opacity: 0;
+}
