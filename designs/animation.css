@@ -192,6 +192,14 @@ f .logo:active {
 .show.mem {
 	transform: translateY(0%);
 }
+.hidden.com {
+	transform: translateY(-50%);
+
+	transition-delay: 0.75s;
+}
+.show.com {
+	transform: translateY(0%);
+}
 
 /* Home */
 .hidden.title:nth-child(1) {
