@@ -1,0 +1,23 @@
+/* Imports */
+@import url(style.css);
+
+.reflection {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	height: 100vh;
+	width: 100%;
+}
+
+.reflection h2 {
+	color: var(--eva-green);
+}
+
+.reflection h4 {
+	position: relative;
+	top: 2em;
+
+	width: 75%;
+}

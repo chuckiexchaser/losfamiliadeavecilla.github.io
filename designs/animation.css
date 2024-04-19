@@ -1,0 +1,315 @@
+/* Imports */
+@import url(style.css);
+
+/* Hover Effects */
+.logo {
+	transition: 0.3s ease;
+}
+.logo:hover {
+	scale: 1.25;
+}
+f .logo:active {
+	scale: 1;
+}
+
+.link {
+	transition: 0.3s ease;
+}
+.link:hover {
+	color: var(--eva-green);
+}
+.link:active {
+	scale: 0.9;
+}
+
+.button-theme {
+	transition: 0.3s ease;
+}
+.button-theme:hover {
+	background-color: var(--vantablack);
+	color: var(--eva-green);
+
+	border-color: var(--eva-green);
+}
+.button-theme:active {
+	scale: 0.9;
+}
+
+.activity .button-theme:active {
+	scale: 0.9;
+}
+
+.card {
+	transition: 0.3s ease;
+}
+.card:hover {
+	scale: 1.1;
+
+	border: 0.1em solid var(--eva-green);
+}
+.card:active {
+	scale: 1;
+}
+.info {
+	transition: 0.3s ease;
+}
+.card:hover .info {
+	opacity: 1;
+}
+
+.reference {
+	transition: 0.3s ease;
+}
+.reference::before {
+	transition: 0.3s ease;
+}
+.reference:hover {
+	scale: 1.05;
+
+	border-color: var(--eva-green);
+}
+.reference:active {
+	scale: 1;
+}
+.reference:hover::before {
+	opacity: 1;
+}
+
+.infographic-image {
+	transition: 0.3s ease;
+}
+.infographic-image:hover {
+	scale: 1.05;
+}
+
+.images-gallery {
+	transition: 0.3s ease;
+}
+.images-gallery:hover {
+	scale: 1.05;
+}
+
+/* Active Effects */
+.item {
+	transition: 0.5s ease;
+}
+.item.active {
+	cursor: default;
+
+	scale: 1;
+
+	filter: grayscale(0);
+}
+
+.overview {
+	transition: 0.5s ease;
+}
+.overview.active {
+	z-index: 1;
+
+	opacity: 1;
+
+	transition: 1.5s ease 0.5s;
+}
+
+.dot {
+	transition: 0.5s ease;
+}
+.dot.active {
+	cursor: default;
+
+	background-color: var(--eva-green);
+
+	width: 2em;
+}
+
+.member-container {
+	transition: 0.5s ease;
+}
+.member-container.active {
+	z-index: 1;
+
+	opacity: 1;
+
+	transition: 1.5s ease 0.5s;
+}
+
+.scenery-container {
+	transition: 0.5s ease;
+}
+.scenery-container.active {
+	z-index: 1;
+
+	opacity: 1;
+
+	transition: 1.5s ease 0.5s;
+}
+
+.image-uno-absolute {
+	transition: 0.5s ease;
+}
+.image-uno-absolute.inactive {
+	z-index: 0;
+
+	opacity: 0;
+}
+
+/* ANIMATION */
+.hidden {
+	opacity: 0;
+
+	transition: 1s ease;
+}
+
+.show {
+	opacity: 1;
+}
+
+/* Absolute */
+.hidden.home-background {
+	transition: 5s ease;
+}
+
+.hidden.logo {
+	transform: translateY(-50%);
+}
+.show.logo {
+	transform: translateY(0%);
+}
+.hidden.act {
+	transform: translateY(-50%);
+
+	transition-delay: 0.25s;
+}
+.show.act {
+	transform: translateY(0%);
+}
+.hidden.mem {
+	transform: translateY(-50%);
+
+	transition-delay: 0.5s;
+}
+.show.mem {
+	transform: translateY(0%);
+}
+
+/* Home */
+.hidden.title:nth-child(1) {
+	transform: translateY(-50%);
+
+	transition-delay: 1.25s;
+}
+.hidden.title:nth-child(2) {
+	transform: translateY(-50%);
+
+	transition-delay: 1.5s;
+}
+.hidden.title:nth-child(3) {
+	transform: translateY(-50%);
+
+	transition-delay: 1.75s;
+}
+.show.title:nth-child(1) {
+	transform: translateY(0%);
+}
+.show.title:nth-child(2) {
+	transform: translateY(0%);
+}
+.show.title:nth-child(3) {
+	transform: translateY(0%);
+}
+
+.hidden.button-theme {
+	transition-delay: 2s;
+}
+.hidden.subject-panel {
+	transform: translateX(-50%);
+
+	transition-delay: 2s;
+}
+.show.button-theme {
+	transform: translateY(0%);
+}
+.show.hidden.subject-panel {
+	transform: translateY(0%);
+}
+
+/* Activities */
+.hidden.item:nth-child(1) {
+	transform: translateY(25%);
+
+	transition-delay: 0.5s;
+}
+.hidden.item:nth-child(2) {
+	transform: translateY(25%);
+
+	transition-delay: 0.25s;
+}
+.hidden.item:nth-child(3) {
+	transform: translateY(25%);
+
+	transition-delay: 0.75s;
+}
+.show.item:nth-child(1) {
+	transform: translateY(0%);
+}
+.show.item:nth-child(2) {
+	transform: translateY(0%);
+}
+.show.item:nth-child(3) {
+	transform: translateY(0%);
+}
+
+/* Member */
+.hidden.card {
+	transform: translateX(-50%);
+}
+.hidden.card:nth-child(1) {
+	transition-delay: 0s;
+	transform: translateX(-50%);
+}
+.hidden.card:nth-child(2) {
+	transition-delay: 0.25s;
+	transform: translateX(-50%);
+}
+.hidden.card:nth-child(3) {
+	transition-delay: 0.5s;
+	transform: translateX(-50%);
+}
+.hidden.card:nth-child(4) {
+	transition-delay: 0.75s;
+	transform: translateX(-50%);
+}
+.hidden.card:nth-child(5) {
+	transition-delay: 1s;
+	transform: translateX(-50%);
+}
+.hidden.card:nth-child(6) {
+	transition-delay: 1.25s;
+	transform: translateX(-50%);
+}
+.hidden.card:nth-child(7) {
+	transition-delay: 1.5s;
+	transform: translateX(-50%);
+}
+.show.card:nth-child(1) {
+	transform: translateX(0%);
+}
+.show.card:nth-child(2) {
+	transform: translateX(0%);
+}
+.show.card:nth-child(3) {
+	transform: translateX(0%);
+}
+.show.card:nth-child(4) {
+	transform: translateX(0%);
+}
+.show.card:nth-child(5) {
+	transform: translateX(0%);
+}
+.show.card:nth-child(6) {
+	transform: translateX(0%);
+}
+.show.card:nth-child(7) {
+	transform: translateX(0%);
+}

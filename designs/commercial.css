@@ -1,0 +1,98 @@
+@import url(style.css);
+
+.full-screen {
+	position: absolute;
+	top: 0em;
+	width: 0em;
+	z-index: 0;
+
+	height: 100vh;
+	width: 100%;
+
+	background-color: #010101ee;
+
+	opacity: 0;
+}
+.full-screen.active {
+	z-index: 4;
+	opacity: 1;
+}
+.close {
+	cursor: pointer;
+
+	position: absolute;
+	top: 1em;
+	right: 1em;
+
+	height: 2em;
+	width: 2em;
+
+	background: url(../resources/icons/back.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.full-screen .act-1-full {
+	background: url(../resources/pictures/act1.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100%;
+	width: 100%;
+}
+.full-screen .act-2-full {
+	background: url(../resources/pictures/act2.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100%;
+	width: 100%;
+}
+
+.commercial {
+	position: relative;
+
+	flex-direction: column;
+}
+.commercial h2 {
+	color: var(--eva-green);
+}
+
+.commercial-panel {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
+	height: 70%;
+	width: 50%;
+}
+.act-1 {
+	cursor: pointer;
+
+	background: url(../resources/pictures/act1.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	height: 100%;
+	width: 40%;
+}
+.act-2 {
+	cursor: pointer;
+
+	background: url(../resources/pictures/act2.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	height: 100%;
+	width: 40%;
+}
+
+.commercial-image {
+	transition: 0.25s ease;
+}
+.commercial-image:hover {
+	scale: 1.1;
+}

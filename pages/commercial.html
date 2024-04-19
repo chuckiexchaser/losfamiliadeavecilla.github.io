@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>El reflejo</title>
+
+		<link rel="stylesheet" href="../designs/commercial.css" />
+		<link rel="stylesheet" href="../designs/animation.css" />
+
+		<script defer src="../scripts/observer.js"></script>
+		<script defer src="../scripts/commercial.js"></script>
+		<script defer src="../scripts/linkage.js"></script>
+	</head>
+	<body>
+		<!-- Absolute Elements -->
+		<div class="navigation-bar">
+			<div class="logo" onclick="home()"></div>
+
+			<div class="link-panel">
+				<h4 class="link">Activities</h4>
+				<h4 class="link">Members</h4>
+				<h4 class="com link">Commercial</h4>
+			</div>
+		</div>
+
+		<div class="full-screen act-1-abs">
+			<div class="act-1-full"></div>
+			<div class="close" onclick="closeFullscreen()"></div>
+		</div>
+		<div class="full-screen act-2-abs">
+			<div class="act-2-full"></div>
+			<div class="close" onclick="closeFullscreen()"></div>
+		</div>
+
+		<!-- Reflection Elements -->
+		<div class="commercial section">
+			<h2 class="title">COMMERCIAL</h2>
+
+			<div class="commercial-panel">
+				<div class="act-1 commercial-image"></div>
+				<div class="act-2 commercial-image"></div>
+			</div>
+		</div>
+	</body>
+</html>
